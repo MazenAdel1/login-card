@@ -63,6 +63,11 @@ i {
     position: absolute;
     right: 0;
     bottom: 58px;
+    transition: .3s;
+}
+
+.main-inps input:focus~i {
+    bottom: 78px;
 }
 
 a {
