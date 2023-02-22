@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pass i {
+    font-weight: 900;
+}
+
+body {
+    background-image: url(image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 40px;
+    backdrop-filter: blur(20px);
+    font-family: "open sans";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    border-radius: 25px;
+    width: 400px;
+    height: 500px;
+    border: 1px solid #7e7e7e;
+}
+
+
+
+form h1 {
+    margin-bottom: 40px;
+}
+
+
+.email,
+.pass {
+    position: relative;
+}
+
+
+.main-inps input {
+    background-color: transparent;
+    width: 320px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    outline: none;
+    padding: 15px 0;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+i {
+    position: absolute;
+    right: 0;
+    bottom: 58px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.remfor {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remfor label {
+    position: absolute;
+    left: 60px;
+}
+
+.remfor a {
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.login input {
+    margin: 30px 0;
+    width: 320px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: open sans;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: white;
+    border: none;
+    transition: .2s;
+}
+
+.login input:hover {
+    background-color: #9e9e9e;
+
+}
+
+p {
+    letter-spacing: 1px;
+}
+
+p a {
+    font-weight: bold;
+}
+
+@media (max-width:450px) {
+    form {
+        width: 320px;
+    }
+
+    .email,
+    .pass,
+    .login {
+        width: 240px;
+        display: flex;
+    }
+
+    .remfor {
+        font-size: 13px;
+        display: flex;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    body {
+        background-position: -700px;
+    }
+}
+
+@media (min-width:451px) and (max-width:1000px) {
+    body {
+        background-position: -300px;
+    }
+}
